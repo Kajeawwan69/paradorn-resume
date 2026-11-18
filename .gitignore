@@ -1,0 +1,6 @@
+# keep backups and anything private out of the published site
+index.backup.html
+*.pdf
+.claude/
+Thumbs.db
+desktop.ini
