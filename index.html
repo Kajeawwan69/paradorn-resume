@@ -167,7 +167,7 @@ cite b{color:var(--fg);font-weight:600;display:block}
 .fan .ph:nth-child(2){right:0;bottom:8%;translate:-12% -14%;rotate:0deg}
 .in .fan .ph:nth-child(1){translate:0 0;rotate:-4deg}
 .in .fan .ph:nth-child(2){translate:0 0;rotate:3deg}
-.thumbs{display:flex;gap:.6rem}
+.thumbs{display:flex;gap:.6rem;flex-wrap:wrap}
 .thumbs img{height:clamp(64px,9vw,104px);width:auto;aspect-ratio:4/3;object-fit:cover;border-radius:4px;box-shadow:0 10px 20px -14px rgba(0,0,0,.55);min-width:0}
 
 /* ladder diagram (Line Clearance interlock) */
@@ -885,12 +885,24 @@ section.jch:last-of-type::after{content:"";position:absolute;left:0;right:0;bott
           <img src="img/beetle-thairath.jpg" alt="ข่าวไทยรัฐเรื่องธุรกิจด้วง" loading="lazy">
           <img src="img/beetle-tv.jpg" alt="ออกรายการโทรทัศน์" loading="lazy">
           <img src="img/beetle-show.jpg" alt="ออกรายการเรื่องการเลี้ยงด้วง" loading="lazy">
+          <img src="img/beetle-studio.jpg" alt="ออกรายการโทรทัศน์เรื่องการเลี้ยงด้วง" loading="lazy">
         </div>
       </div>
-      <figure class="vis"><div class="ph" style="--ar:4/4.4"><img src="img/beetle-studio.jpg" alt="ออกรายการโทรทัศน์เรื่องการเลี้ยงด้วง" loading="lazy"></div></figure>
+      <figure class="vis"><div class="ph" style="--ar:1185/1381"><img src="img/beetle-sudueng.jpg" alt="ออกรายการสุดอึ้งทึ่งทั่วไทย ตอนคู่แฝดแมลงอัศจรรย์" loading="lazy" style="transform:none"></div></figure>
     </div>
   </section>
 
+  <!-- THANK YOU -->
+  <section class="blk obs stop dark thanks" data-bg="navy" data-title="ขอบคุณครับ">
+    <div class="wrap one center">
+      <div class="copy center rv">
+        <div class="ph"><img src="img/portrait.jpg" alt="ภราดร แสดงฤทธิ์" loading="lazy" style="object-position:50% 28%"></div>
+        <h2>ขอบคุณครับ</h2>
+        <p class="thesis">ภราดร แสดงฤทธิ์ (ปก) · ยินดีตอบทุกคำถามครับ</p>
+        <p class="contact">Paradorn2809@hotmail.com</p>
+      </div>
+    </div>
+  </section>
   <!-- Sections parked for later. Move them out of this <template> to show them again. -->
   <template id="parked">
   <!-- 03 PROJECTS -->
@@ -1042,17 +1054,6 @@ section.jch:last-of-type::after{content:"";position:absolute;left:0;right:0;bott
     </div>
   </section>
 
-  <!-- THANK YOU -->
-  <section class="blk obs stop dark thanks" data-bg="navy" data-title="ขอบคุณครับ">
-    <div class="wrap one center">
-      <div class="copy center rv">
-        <div class="ph"><img src="img/portrait.jpg" alt="ภราดร แสดงฤทธิ์" loading="lazy" style="object-position:50% 28%"></div>
-        <h2>ขอบคุณครับ</h2>
-        <p class="thesis">ภราดร แสดงฤทธิ์ (ปก) · ยินดีตอบทุกคำถามครับ</p>
-        <p class="contact">Paradorn2809@hotmail.com</p>
-      </div>
-    </div>
-  </section>
   </template>
 </main>
 
