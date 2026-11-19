@@ -88,6 +88,13 @@ html.tone-dark #fab button{background:rgba(10,31,77,.6);border-color:rgba(255,25
 .cv dd span{font-size:var(--t-small);line-height:1.6;color:var(--fg2)}
 .cv > div.todo{margin:.6rem 0 .2rem;padding:.7rem .85rem;border:1.5px dashed var(--copper);background:rgba(154,85,39,.07)}
 .todo dt,.todo b{color:var(--copper) !important}
+.edu{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.edu li{display:grid;grid-template-columns:clamp(56px,6vw,76px) 4.2em minmax(0,1fr);gap:clamp(.9rem,2vw,1.6rem);align-items:center;padding:clamp(.9rem,2vh,1.3rem) 0;border-bottom:1px solid var(--line)}
+.edu img{width:100%;aspect-ratio:1/1;object-fit:contain;display:block;border-radius:50%;background:#FFFFFF}
+.edu .y{font-family:var(--f-mono);font-size:clamp(1rem,1.4vw,1.25rem);color:var(--hl);font-variant-numeric:tabular-nums}
+.edu .d{display:flex;flex-direction:column;gap:.2rem;min-width:0}
+.edu .d b{font-family:var(--f-display);font-weight:600;font-size:clamp(1.1rem,1.6vw,1.45rem);line-height:1.4;color:var(--fg)}
+.edu .d span{font-size:var(--t-small);color:var(--fg2)}
 .skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem 1.6rem}
 .skills div{min-width:0}
 .skills b{display:block;font-family:var(--f-mono);font-weight:500;font-size:var(--t-small);color:var(--hl);letter-spacing:.04em}
@@ -503,17 +510,15 @@ section.jch:last-of-type::after{content:"";position:absolute;left:0;right:0;bott
 
   <!-- 01 EDUCATION -->
   <section class="blk obs stop" data-bg="paper" data-title="01 · Education" data-word="Education">
-    <div class="wrap">
+    <div class="wrap one">
       <div class="copy rv">
         <header class="sec"><span class="no">01</span><h2>Education</h2><span class="th">ประวัติการศึกษา</span></header>
-        <dl class="cv">
-          <div class="todo"><dt>25xx</dt><dd><b>ปวส. สาขา [ใส่สาขา]</b><span>[สถานศึกษา] · เกรดเฉลี่ย [ ] · ยังไม่มีข้อมูล ต้องเติมก่อนใช้งาน</span></dd></div>
-          <div><dt>2559–2562</dt><dd><b>ปวช. สาขาช่างไฟฟ้ากำลัง</b><span>วิทยาลัยเทคโนโลยีดอนบอสโก บ้านโป่ง · เกรดเฉลี่ย 3.30 · ผ่านการประเมินมาตรฐานวิชาชีพ</span></dd></div>
-          <div><dt>2559</dt><dd><b>มัธยมศึกษาตอนต้น</b><span>โรงเรียนสารสิทธิ์พิทยาลัย · เกรดเฉลี่ย 3.19</span></dd></div>
-        </dl>
-        <p class="small">วิชาช่างที่ได้เกรด 4.0: วงจรไฟฟ้ากระแสตรง · งานซ่อมเครื่องใช้ไฟฟ้า · ภาษาอังกฤษเทคนิคสำหรับงานช่าง · คอมพิวเตอร์และสารสนเทศเพื่องานอาชีพ</p>
+        <ul class="edu">
+          <li><img src="img/logo-donbosco.png" alt="ตราวิทยาลัยเทคโนโลยีดอนบอสโก" loading="lazy"><span class="y">2564</span><span class="d"><b>ปวส. สาขาวิชาไฟฟ้า (ไฟฟ้าควบคุม)</b><span>วิทยาลัยเทคโนโลยีดอนบอสโก บ้านโป่ง</span></span></li>
+          <li><img src="img/logo-donbosco.png" alt="ตราวิทยาลัยเทคโนโลยีดอนบอสโก" loading="lazy"><span class="y">2562</span><span class="d"><b>ปวช. สาขาช่างไฟฟ้ากำลัง</b><span>วิทยาลัยเทคโนโลยีดอนบอสโก บ้านโป่ง</span></span></li>
+          <li><img src="img/logo-sarasit.png" alt="ตราโรงเรียนสารสิทธิ์พิทยาลัย" loading="lazy"><span class="y">2559</span><span class="d"><b>มัธยมศึกษาตอนต้น</b><span>โรงเรียนสารสิทธิ์พิทยาลัย</span></span></li>
+        </ul>
       </div>
-      <figure class="vis crest"><div class="ph contain" style="--ar:1/1"><img src="img/logo-donbosco.png" alt="ตราวิทยาลัยเทคโนโลยีดอนบอสโก" loading="lazy"></div></figure>
     </div>
   </section>
 
