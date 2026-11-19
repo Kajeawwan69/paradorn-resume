@@ -95,6 +95,15 @@ html.tone-dark #fab button{background:rgba(10,31,77,.6);border-color:rgba(255,25
 .edu .d{display:flex;flex-direction:column;gap:.2rem;min-width:0}
 .edu .d b{font-family:var(--f-display);font-weight:600;font-size:clamp(1.1rem,1.6vw,1.45rem);line-height:1.4;color:var(--fg)}
 .edu .d span{font-size:var(--t-small);color:var(--fg2)}
+.exp{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.exp > li{display:grid;grid-template-columns:7.2em minmax(0,1fr);gap:clamp(.9rem,2vw,1.6rem);padding:clamp(1rem,2.4vh,1.5rem) 0;border-bottom:1px solid var(--line)}
+.exp .y{font-family:var(--f-mono);font-size:clamp(.95rem,1.3vw,1.15rem);color:var(--hl);font-variant-numeric:tabular-nums;padding-top:.3em;white-space:nowrap}
+.exp .d{display:flex;flex-direction:column;gap:.25rem;min-width:0}
+.exp .d > b{font-family:var(--f-display);font-weight:600;font-size:clamp(1.15rem,1.7vw,1.5rem);line-height:1.4;color:var(--fg)}
+.exp .d > span{font-size:var(--t-small);color:var(--fg2);line-height:1.6}
+.gal{margin-top:.9rem;display:flex;gap:.7rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.4rem;scrollbar-width:thin}
+.gal img{flex:none;height:clamp(170px,26vh,260px);width:auto;border-radius:6px;scroll-snap-align:start;box-shadow:0 14px 24px -16px rgba(6,18,46,.55)}
+@media (max-width:820px){.exp > li{grid-template-columns:minmax(0,1fr);gap:.3rem}.exp .y{padding-top:0}}
 .skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem 1.6rem}
 .skills div{min-width:0}
 .skills b{display:block;font-family:var(--f-mono);font-weight:500;font-size:var(--t-small);color:var(--hl);letter-spacing:.04em}
@@ -527,6 +536,29 @@ section.jch:last-of-type::after{content:"";position:absolute;left:0;right:0;bott
     <div class="wrap one">
       <div class="copy rv">
         <header class="sec"><span class="no">02</span><h2>Experience</h2><span class="th">ประสบการณ์ทำงาน</span></header>
+        <ol class="exp">
+          <li>
+            <span class="y">2562–2564</span>
+            <div class="d">
+              <b>ช่างเทคนิค / ช่างซ่อมบำรุง (CM)</b>
+              <span>ผู้รับเหมาในโรงงาน SCG · ทำงานควบคู่กับเรียน ปวส.</span>
+              <div class="gal">
+                <img src="img/cm-1.jpg" alt="ทำงานบนรถกระเช้า ติดตั้งรางเดินสายไฟ" loading="lazy">
+                <img src="img/cm-2.jpg" alt="ทำงานบนโครงหลังคาโรงงาน สวมเข็มขัดนิรภัย" loading="lazy">
+                <img src="img/cm-3.jpg" alt="ทำงานบนรางเดินสายและท่อด้านนอกอาคาร" loading="lazy">
+                <img src="img/cm-4.jpg" alt="เดินสายไฟบนที่สูงภายในอาคาร" loading="lazy">
+                <img src="img/cm-5.jpg" alt="ซ่อมบำรุงเครนเหนือศีรษะ" loading="lazy">
+              </div>
+            </div>
+          </li>
+          <li>
+            <span class="y">ต.ค. 2564</span>
+            <div class="d">
+              <b>FFG Machine Operator</b>
+              <span>พนักงานประจำ SCG · ผลิตกล่องบรรจุภัณฑ์จากกระดาษลูกฟูก</span>
+            </div>
+          </li>
+        </ol>
       </div>
     </div>
   </section>
